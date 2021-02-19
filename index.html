@@ -1,12 +1,110 @@
+<!--- Assignment 3 ID ------->
+<!--- Tan Le Xuan, Tricia --->
+<!--- S10203209 ------------->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="indexstyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <script src="indexscript.js"></script>
+
+    <!--- Top Container --->
+	  <section class="red-top-container"></section>
+
+    <section class="main-white-container">
+
+      <section class="container">
+			<!--- Website Name n Info --->
+        <div class="website-text">
+          <h2>Covid-19</h2>
+          <p>-Lets play our part-</p>
+        </div>
+		  </section>
+      
+      <section class="container">
+			<!--- World map --->
+        <div class="map">
+          <img src="map.jpg" alt="Girl wearing mask" width="100%" height="auto"> 
+        </div>
+		  </section>
+
+      <section class="container">
+      <!--- Map of cases around the world, API --->
+        <script src='api.js'>
+        </script>
+          <div class="d-flex justify-content-center"> 
+            <div class="spinner-border" 
+                 role="status" id="loading"> 
+                <span class="sr-only">Loading...</span> 
+            </div> 
+        </div> 
+        <!-- table for showing data -->
+        <table id="employees"></table> 
+      </section>
+
+      <section class="container">
+			<!--- Row (Info and Picture) --->
+        <div class="info-picture-row">
+
+          <!--- Overview/Prevention (Info) --->
+          <div class="overview-prevention">
+
+            <!-- Overview and Prevention links -->
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+              <button class="tablinks" onclick="openTab(event, 'Prevention')">Prevention</button>
+            </div>
+
+            <!-- Overview Tab -->
+            <div id="Overview" class="tabcontent">
+              <h2><b>Covid-19 (Coronavirus)</b></h2>
+              <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+                
+              <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and can recover without requiring special treatment and hospitalization. However, older people and those with underlying medical problems (cardiovascular disease, diabetes, chronic respiratory disease, and cancer) are more likely to develop serious illness.</p>
+              
+              <p>The best way to prevent and slow down transmission is to be well informed about the Covid-19 virus, its symptoms and how it spreads. Protect yourself and others from infection by practicing personal hygiene like washing your hands or using an alcohol based rub frequently and not touching your face. </p>
+
+              <p>The Covid-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, covering your mouth when you cough).</p>
+            </div>
+
+            <div id="Prevention" class="tabcontent">
+              <h2><b>Prevention</b></h2>
+              <p>- Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</p>
+              <p>- Avoid touching your face.</p>
+              <p>- Cover your mouth and nose when coughing or sneezing.</p>
+              <p>- Stay home if you feel unwell.</p>
+              <p>- Refrain from smoking and other activities that weaken the lungs.</p>
+              <p>- Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</p>
+              <h2><b>Symptoms</b></h2>
+              <p>Most common symptoms include <u>fever, dry cough and tiredness.</u></p>
+              <p>Less common symptoms include <u>aches and pains, sore throat, diarrhoea, conjunctivitis, headache, loss of taste or smell and a rash on skin, or discolouration of fingers or toes</u>
+              <p>- if one has any of the symptoms above, do consult a doctor or get medical attention immediately.</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="picture">
+            <!--- Picture (People wearing mask) --->
+            <img src="mask.jpg" alt="Girl wearing mask" width="450" height="100%">
+            <img src="mask2.jpg" alt="People wearing mask" width="450" height="100%">
+          </div>
+
+        </div>
+
+      <section class="container">
+        <!--- Quiz --->
+        <div class="quiz">
+          <h2>Take a quiz about Covid-19 to test your knowledge about this current pandemic!</h2><br>
+          <button><a href="quiz.html">Start Quiz ></button>
+        </div>
+
+      </section>
+    </section> 
+
   </body>
 </html>
